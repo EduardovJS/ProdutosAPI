@@ -7,7 +7,7 @@ namespace ProdutosAPI.Context
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<Produto> Produtos;
+        public DbSet<Produto> Produtos { get; set; }    
 
     }
 }
